@@ -16,4 +16,4 @@ Additional features:
 • Filtering
 #
 Here is a preview of the website:
-![alt test] (https://github.com/Pioterr/RubiusTestTask/blob/master/Capture.PNG)
+![alt text] (https://github.com/Pioterr/RubiusTestTask/blob/master/Capture.PNG)
