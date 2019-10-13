@@ -1,0 +1,10 @@
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\bin\Debug\netcoreapp2.0\RubiusTestTask.deps.json
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\bin\Debug\netcoreapp2.0\RubiusTestTask.runtimeconfig.json
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\bin\Debug\netcoreapp2.0\RubiusTestTask.runtimeconfig.dev.json
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\bin\Debug\netcoreapp2.0\RubiusTestTask.dll
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\bin\Debug\netcoreapp2.0\RubiusTestTask.pdb
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\obj\Debug\netcoreapp2.0\RubiusTestTask.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\obj\Debug\netcoreapp2.0\RubiusTestTask.AssemblyInfoInputs.cache
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\obj\Debug\netcoreapp2.0\RubiusTestTask.AssemblyInfo.cs
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\obj\Debug\netcoreapp2.0\RubiusTestTask.dll
+C:\Users\Windows\Desktop\rubiusv4\RubiusTestTask\RubiusTestTask\RubiusTestTask\obj\Debug\netcoreapp2.0\RubiusTestTask.pdb

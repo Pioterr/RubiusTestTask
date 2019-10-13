@@ -1,0 +1,48 @@
+@page "{id:int}"
+@model RubiusTestTask.Pages.Records.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<p>@ViewData["ErrorMessage"]</p>
+
+<h3>Are you sure you want to delete this record?</h3>
+
+<div>
+    <hr/>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Record.Project)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Record.Project)
+        </dd>
+        <br/>
+        <dt>
+            @Html.DisplayNameFor(model => model.Record.Comments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Record.Comments)
+        </dd>
+        <br/>
+        <dt>
+            @Html.DisplayNameFor(model => model.Record.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Record.Date)
+        </dd>
+        <br/>
+    </dl>
+
+    <form method="post">
+        <div class="row">
+            <input type="hidden" asp-for="Record.Id"/>
+            <button type="submit" class="btn col s5 waves-effect waves-light red">Delete</button>
+            <div class="col s2"></div>
+            <a class="btn col s5" asp-page="./Index">Back to List</a>
+        </div>
+    </form>
+</div>

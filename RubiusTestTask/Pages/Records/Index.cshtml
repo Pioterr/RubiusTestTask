@@ -1,0 +1,88 @@
+@page
+@model RubiusTestTask.Pages.Records.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Records</h2>
+<form sp-page="./Index" method="get">
+    <div>
+        <p>
+            Find by Text: 
+        <div class="row">
+            <input type="text" name="SearchString" class="col s10" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn col s2">
+        </div>
+            <br/>
+            <a class="waves-effect waves-light btn" asp-page="./Index">Full List of Records</a>
+            
+        </p>
+    </div>
+</form>
+
+<table class="records">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.ProjectSort"
+                   asp-route-currentFilter="@Model.CurrentFilter">
+                    <span>@Html.DisplayNameFor(model => model.Record[0].Project)</span>
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Record[0].Comments)
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort"
+                   asp-route-currentFilter="@Model.CurrentFilter">
+                    <span>@Html.DisplayNameFor(model => model.Record[0].Date)</span>
+                </a>
+            </th>
+            <th>
+                <a asp-page="Create" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">+</i></a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Record)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Project)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comments)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date.Day) /
+                    @Html.DisplayFor(modelItem => item.Date.Month) /
+                    @Html.DisplayFor(modelItem => item.Date.Year)
+                </td>
+                <td>
+         <a class="btn waves-effect waves-light red accent-4" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@{
+    var prevDisabled = !Model.Record.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Record.HasNextPage ? "disabled" : "";
+}
+
+<a asp-page="./Index"
+   asp-route-sortOrder="@Model.CurrentSort"
+   asp-route-pageIndex="@(Model.Record.PageIndex - 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn @prevDisabled">
+    Previous
+</a>
+<a asp-page="./Index"
+   asp-route-sortOrder="@Model.CurrentSort"
+   asp-route-pageIndex="@(Model.Record.PageIndex + 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn @nextDisabled">
+    Next
+</a>

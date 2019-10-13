@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] RubiusTestTask</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/materialize/css/materialize.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+</head>
+<body>
+<nav>
+    <div class="container">
+        <div class="nav-wrapper">
+            <ul>
+                <li><a asp-page="/Index">Home</a></li>
+                <li><a asp-page="/Records/Index">Records</a></li>
+                </ul>
+        </div>
+    </div>
+</nav>
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; 2018 - Pierre Leblond</p>
+    </footer>
+</div>
+
+<environment include="Development">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="~/lib/materialize/js/materialize.min.js"></script>
+    <script> $(document).ready(function() {
+            $('select').material_select();
+    }); </script>
+    <script>$('input[type="datetime-local"]').attr('type', 'date')</script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
+<script src="~/js/site.min.js" asp-append-version="true"></script>
+@RenderSection("Scripts", required: false)
+</body>
+</html>
