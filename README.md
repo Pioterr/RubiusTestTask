@@ -1,7 +1,6 @@
 # RubiusTestTask
-This is a simple web-site using C# and .NET
+Website using C# and .NET
 #
-
 This is an implementation of a time management system with the ability to add and delete records.
 User can set the following parameters for record:
 1. Report date
@@ -13,5 +12,8 @@ ASP.NET Core is used in the implementation.
 Css framework – materializecss is used for layout.
 ## 
 Additional features:
-• Sorting;
-• Filtering.
+• Sorting
+• Filtering
+#
+Here is a preview of the website:
+![alt test] (https://github.com/Pioterr/RubiusTestTask/blob/master/Capture.PNG)
